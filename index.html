@@ -7,9 +7,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Snake and Ladder | Home</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+    <!-- Loader 1 -->
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <section class="main">
+        <h1>Welcome To My Site</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ametest, nihil laborum laboriosam quaerat exercitationem incidunt corrupti?
+            Nam, harum?</p>
+        <a href="#" class="btn">Read More</a>
+    </section>
+
+    <script>
+        // main page loader
+        const loader = document.querySelector('.loader');
+        const main = document.querySelector('.main');
+
+        function init() {
+            setTimeout(() => {
+                loader.style.opacity = 0;
+                loader.style.display = 'none';
+
+                main.style.display = 'block';
+                setTimeout(() => (main.style.opacity = 1), 50);
+            }, 4000);
+        }
+        init();
+
+</script>
 
 </body>
 </html>

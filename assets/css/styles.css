@@ -1,5 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');*/
 
+/*
 * {
     box-sizing: border-box;
     margin: 0;
@@ -51,7 +52,7 @@ body {
     opacity: 0.9;
 }
 
-/* LOADER 1 */
+!* LOADER 1 *!
 .loader {
     height: 50px;
     transform-origin: bottom center;
@@ -84,4 +85,288 @@ body {
     50% {
         transform: scale(1);
     }
+}*/
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    text-align:left;
+}
+
+/*background images styling*/
+.bg {
+    background-image: url("../images/img01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+/*.bg > section {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  animation:slider 10s infinite ;
+  animation-direction:alternate;
+}
+
+.bg > section > div {
+  width: 100%;
+}
+
+.bg > section > div:nth-child(1) {
+  background: url("../images/img02.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg > section > div:nth-child(2) {
+  background: url("../images/img03.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg > section > div:nth-child(3) {
+  background: url("../images/img04.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg > section > div:nth-child(4) {
+  background: url("../images/img05.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slider {
+  0%,15%{
+    transform: translateX(0);
+  }
+  25%,40%{
+    transform: translateX(-25%);
+  }
+  50%,70%{
+    transform: translateX(-50%);
+  }
+  80%,100%{
+    transform: translateX(-75%);
+  }
+}*/
+
+/*player details styling*/
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper-top {
+    width: 1000px;
+    height: 60px;
+    margin: -115px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+td {
+    max-width: 50px;
+    max-height: 50px;
+    position: relative;
+    font-family:  Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.player1, .player2 {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.pig {
+    width: 50px;
+    height: 50px;
+    background: url('../images/pig.png');
+    animation: pig 2s steps(4) infinite;
+}
+
+@keyframes pig {
+    100% {background-position: -209px;}
+}
+
+.lupid {
+    width: 50px;
+    height: 50px;
+    background: url('../images/lupid.png');
+    animation: monkey 2s steps(10) infinite;
+}
+
+@keyframes monkey {
+    100% {background-position: -498px;}
+}
+
+button {
+    float: right;
+}
+
+.wrapper1 {
+    position: relative;
+    display: inline-block;
+    left: 530px;
+    bottom: 75px;
+}
+
+#overlay {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-image: url('../images/LaddersSnakes.png');
+    background-repeat: no-repeat;
+}
+
+.wrapper2 {
+    display: inline-block;
+    width: 330px;
+    height: 550px;
+    margin-left: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: -620px;
+
+}
+
+.right-section {
+    min-width: 280px;
+    min-height: 180px;
+    background-image: url('../images/images.jpg')
+}
+.top-row {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    left: -150px;
+}
+.top-row button {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #D2B48C;
+    cursor: pointer;
+}
+
+.resetButton , .sound , .auto-play {
+    padding: 0px;
+}
+
+.sound {
+    margin-left: 80px;
+}
+
+.auto-play {
+    margin-right: 70px;
+}
+
+.mission {
+    position: absolute;
+    font-family: KGOnlyHope, Helvetica, sans-serif;
+    font-size: 27px;
+    top: 50px;
+    width: 250px;
+    left: 45px;
+    word-spacing: 1px;
+}
+
+.gold {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 5px;
+    top: 90px;
+}
+
+@font-face {
+    font-family: KGOnlyHope;
+    src: url(../css/fonts/KGOnlyHope.ttf);
+}
+
+.middle-row {
+    position:relative;
+    left: 180px;
+    bottom: 180px;
+}
+
+.turn, h3 , .circle {
+    position:absolute;
+}
+
+h3 {
+    word-spacing: 5em;
+    left: 77px;
+    top: 0px;
+}
+
+.p1Turn {
+    left: 60px;
+    top: 50px;
+}
+
+.p2Turn {
+    left: 160px;
+    top: 55px;
+}
+
+.circle {
+    left: 25px;
+    top: 30px;
+}
+
+.bottom-row {
+    position:relative;
+    height: 210px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    bottom: 180px;
+    left: 25px;
+}
+.bottom-row :hover{
+    transform: scale(0.97);
+}
+.dieValue {
+    position: absolute;
+    border-radius: 5px;
+    border: 3px solid #75CD65;
+    width:52px;
+    height: 42px;
+    padding:10px 10px 20px 10px;
+    font-size:44px;
+    background:#F5F5F5;
+    top: 60px;
+    left: 115px;
+    text-align:center;
+}
+
+.dieButton {
+    position: absolute;
+    border-radius: 5px;
+    width:52px;
+    padding:1px;
+    font-size:14px;
+    background:#F5F5F5;
+    top: 25px;
+    left: 127px;
+    border: 1px solid blue;
+    text-align:center;
 }

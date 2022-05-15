@@ -11,9 +11,12 @@
     <title>Snake and Ladder | Home</title>
 
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Loader 1 -->
+    <!--&lt;!&ndash; Loader 1 &ndash;&gt;
     <div class="loader">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -26,6 +29,7 @@
         <a href="#" class="btn">Read More</a>
     </section>
 
+    <script src="assets/JQuary/jquery-3.6.0.js"></script>
     <script>
         // main page loader
         const loader = document.querySelector('.loader');
@@ -42,7 +46,51 @@
         }
         init();
 
-</script>
+</script>-->
+
+    <div class ='container bg'>
+        <div class='wrapper-top'>
+            <img class="gameHeaderName" src="./assets/images/snl.png" alt="SnakesAndLadderImage">
+        </div>
+
+        <div class="wrapper1">
+            <div id='overlay'></div>
+            <table id='tbl' border="2px">
+            </table>
+        </div>
+
+        <div class="wrapper2">
+            <div class='top-row right-section'>
+                <img class='gold' src="./assets/images/gold.png" alt="gold image">
+                <button class="sound" type="button"><img src="./assets/images/sound.png" alt ="auto play"></button>
+                <button class="resetButton" type="button"><img src="./assets/images/reset.png" alt ="reset Button"></button>
+                <button class="auto-play" type="button"><img src="./assets/images/play.png" alt ="auto play"></button>
+                <audio class="audio" src="./assets/audio/sexiness.mp3" type="audio/mpeg"></audio>
+                <h2 class='mission'> Decide who is paying for Lunch with Snakes & Ladder!</h2>
+            </div>
+
+            <div class='middle-row right-section'>
+                <h3>P1 P2</h3>
+                <img class='circle' src="./assets/images/circle.png" alt="golden circle">
+                <img class="p1Turn turn" src="./assets/images/lupid1.png" alt="monkey">
+                <img class="p2Turn turn" src="./assets/images/pig1.png" alt="pig">
+            </div>
+
+            <div class='bottom-row right-section'>
+                <button class="dieButton" type="button" >Roll</button>
+                <div class='dieValue'>0</div>
+            </div>
+            <!--<section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </section>-->
+        </div>
+    </div>
+
+    <script src="assets/JQuary/jquery-3.6.0.js"></script>
+    <script src="assets/js/script.js" charset="utf-8"></script>
 
 </body>
 </html>

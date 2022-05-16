@@ -346,32 +346,37 @@ h3 {
     bottom: 180px;
     left: 25px;
 }
+
 .bottom-row :hover{
     transform: scale(0.97);
 }
+
 .dieValue {
     position: absolute;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 3px solid #75CD65;
     width:52px;
     height: 42px;
     padding:10px 10px 20px 10px;
     font-size:44px;
     background:#F5F5F5;
-    top: 60px;
+    top: 75px;
     left: 115px;
     text-align:center;
 }
 
 .dieButton {
     position: absolute;
-    border-radius: 5px;
-    width:52px;
-    padding:1px;
-    font-size:14px;
-    background:#F5F5F5;
-    top: 25px;
-    left: 127px;
-    border: 1px solid blue;
+    top: 20px;
+    left: 90px;
     text-align:center;
+    background-color: #608b32;
+    color: #fff;
+    font-family: Poppins;
+    width: 130px;
+    font-size: 20px;
+    padding: 08px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
